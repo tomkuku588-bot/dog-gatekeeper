@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>狗狗守门员隐私政策 / Dog Gatekeeper Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fff8ec;
+      --text: #26170f;
+      --muted: #6f5a49;
+      --line: #ead7bd;
+      --panel: #fff2dc;
+      --accent: #b66018;
+      --accent-text: #fff8ec;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 44px 20px 64px;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    header {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 44px);
+    }
+
+    h2 {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 6px;
+      background: rgba(182, 96, 24, 0.1);
+      color: var(--accent);
+    }
+
+    .language-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+    }
+
+    .language-label {
+      margin-right: 4px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .language-button {
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .language-button[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: var(--accent-text);
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #18110d;
+        --text: #fff8ec;
+        --muted: #d7c0a3;
+        --line: #4d382a;
+        --panel: #221712;
+        --accent: #ffbf5a;
+        --accent-text: #271407;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 data-title>狗狗守门员隐私政策</h1>
+      <p><strong>Dog Gatekeeper Privacy Policy</strong></p>
+      <p data-last-updated>最后更新：2026-06-01</p>
+    </div>
+    <nav class="language-card" aria-label="Language selector">
+      <span class="language-label" data-language-label>语言</span>
+      <button class="language-button" type="button" data-lang-button="zh-CN" aria-pressed="true">简体中文</button>
+      <button class="language-button" type="button" data-lang-button="zh-TW" aria-pressed="false">繁體中文</button>
+      <button class="language-button" type="button" data-lang-button="en" aria-pressed="false">English</button>
+      <button class="language-button" type="button" data-lang-button="ja" aria-pressed="false">日本語</button>
+    </nav>
+  </header>
+
+  <main>
+    <article data-lang-panel="zh-CN">
+      <h2>我们保存什么</h2>
+      <p>狗狗守门员只在你的浏览器本机保存扩展设置、目标站点列表、按域名记录的使用秒数、更新时间、今日休息次数、计划休息秒数和完成休息任务次数。</p>
+      <p>这些数据用于提供目标站点计时、提前提醒、全屏休息遮罩、休息任务、暂停、清空计时和今日统计。</p>
+
+      <h2>我们不保存什么</h2>
+      <p>扩展不会保存或上传网页正文、搜索内容、账号密码、表单内容、聊天内容、精确浏览历史、个人身份信息、付款信息或位置数据。</p>
+
+      <h2>数据是否离开本机</h2>
+      <p>不会。设置、计时和统计都保存在 <code>chrome.storage.local</code>。扩展业务代码不发起远程网络请求，也不使用广告、统计 SDK 或第三方追踪服务。</p>
+
+      <h2>权限说明</h2>
+      <ul>
+        <li><strong>storage</strong>：保存本地设置、计时和今日统计。</li>
+        <li><strong>网页内容脚本</strong>：识别当前页面域名，只在目标站点本地计时，并显示提醒和休息遮罩。扩展不会把页面内容发送到任何服务器。</li>
+      </ul>
+
+      <h2>数据共享</h2>
+      <p>我们不会出售、出租、传输或共享用户数据给第三方。我们不会使用用户数据投放个性化广告，也不会让人工读取用户数据。</p>
+
+      <h2>用户控制</h2>
+      <p>你可以在扩展弹窗中修改目标站点、清空当前站点计时、暂停守门或关闭扩展。卸载扩展会删除 Chrome 为该扩展保存的本地数据。</p>
+
+      <h2>联系邮箱</h2>
+      <p>如有隐私或支持问题，请联系 <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a>。</p>
+
+      <h2>Chrome Web Store Limited Use</h2>
+      <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+    </article>
+
+    <article data-lang-panel="zh-TW" hidden>
+      <h2>我們保存什麼</h2>
+      <p>狗狗守門員只會在你的瀏覽器本機保存擴充功能設定、目標網站清單、按網域記錄的使用秒數、更新時間、今日休息次數、計畫休息秒數和完成休息任務次數。</p>
+      <p>這些資料用於提供目標網站計時、提前提醒、全螢幕休息遮罩、休息任務、暫停、清空計時和今日統計。</p>
+
+      <h2>我們不保存什麼</h2>
+      <p>擴充功能不會保存或上傳網頁正文、搜尋內容、帳號密碼、表單內容、聊天內容、精確瀏覽紀錄、個人身份資訊、付款資訊或位置資料。</p>
+
+      <h2>資料是否離開本機</h2>
+      <p>不會。設定、計時和統計都保存在 <code>chrome.storage.local</code>。擴充功能的業務程式碼不會發起遠端網路請求，也不使用廣告、統計 SDK 或第三方追蹤服務。</p>
+
+      <h2>權限說明</h2>
+      <ul>
+        <li><strong>storage</strong>：保存本地設定、計時和今日統計。</li>
+        <li><strong>網頁內容腳本</strong>：識別目前頁面的網域，只在目標網站本地計時，並顯示提醒和休息遮罩。擴充功能不會把頁面內容傳送到任何伺服器。</li>
+      </ul>
+
+      <h2>資料共享</h2>
+      <p>我們不會出售、出租、傳輸或共享使用者資料給第三方。我們不會使用使用者資料投放個人化廣告，也不會讓人工讀取使用者資料。</p>
+
+      <h2>使用者控制</h2>
+      <p>你可以在擴充功能彈窗中修改目標網站、清空目前網站計時、暫停守門或關閉擴充功能。解除安裝擴充功能會刪除 Chrome 為該擴充功能保存的本地資料。</p>
+
+      <h2>聯絡信箱</h2>
+      <p>如有隱私或支援問題，請聯絡 <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a>。</p>
+
+      <h2>Chrome Web Store Limited Use</h2>
+      <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+    </article>
+
+    <article data-lang-panel="en" hidden>
+      <h2>What We Store</h2>
+      <p>Dog Gatekeeper stores only local extension settings, the target domain list, per-domain usage seconds, update timestamps, today's break count, planned break seconds, and completed break task count in your browser.</p>
+      <p>This data is used to provide target-site timing, early warnings, the full-screen break overlay, break tasks, pausing, clearing timers, and daily statistics.</p>
+
+      <h2>What We Do Not Store</h2>
+      <p>The extension does not store or upload page content, search content, passwords, form values, chat content, precise browsing history, personally identifiable information, payment information, or location data.</p>
+
+      <h2>Does Data Leave Your Device?</h2>
+      <p>No. Settings, timers, and statistics are stored in <code>chrome.storage.local</code>. The extension's runtime code does not make remote network requests and does not use ads, analytics SDKs, or third-party tracking services.</p>
+
+      <h2>Permission Explanation</h2>
+      <ul>
+        <li><strong>storage</strong>: saves local settings, timers, and daily statistics.</li>
+        <li><strong>Content scripts on web pages</strong>: detect the current page hostname, count time locally only on target sites, and display reminders and the break overlay. The extension does not send page content to any server.</li>
+      </ul>
+
+      <h2>Data Sharing</h2>
+      <p>We do not sell, rent, transfer, or share user data with third parties. We do not use user data for personalized advertising, and no human reads user data.</p>
+
+      <h2>User Control</h2>
+      <p>You can edit target sites, clear the current site's timer, pause the guard, or disable the extension from the popup. Uninstalling the extension deletes the local data Chrome stores for this extension.</p>
+
+      <h2>Contact</h2>
+      <p>For privacy or support questions, contact <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a>.</p>
+
+      <h2>Chrome Web Store Limited Use</h2>
+      <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+    </article>
+
+    <article data-lang-panel="ja" hidden>
+      <h2>保存する情報</h2>
+      <p>Dog Gatekeeper は、拡張機能の設定、対象ドメイン一覧、ドメイン別の使用秒数、更新時刻、今日の休憩回数、予定休憩秒数、完了した休憩タスク数だけをブラウザ内に保存します。</p>
+      <p>これらの情報は、対象サイトの計測、事前通知、全画面の休憩オーバーレイ、休憩タスク、一時停止、タイマーのリセット、今日の統計を提供するために使われます。</p>
+
+      <h2>保存しない情報</h2>
+      <p>この拡張機能は、ページ本文、検索内容、パスワード、フォーム入力、チャット内容、詳細な閲覧履歴、個人識別情報、支払い情報、位置情報を保存またはアップロードしません。</p>
+
+      <h2>データは端末外へ送信されますか</h2>
+      <p>いいえ。設定、タイマー、統計は <code>chrome.storage.local</code> に保存されます。拡張機能の実行コードはリモートのネットワークリクエストを行わず、広告、分析 SDK、第三者トラッキングサービスも使用しません。</p>
+
+      <h2>権限の説明</h2>
+      <ul>
+        <li><strong>storage</strong>：ローカル設定、タイマー、今日の統計を保存します。</li>
+        <li><strong>Web ページ上のコンテンツスクリプト</strong>：現在のページのホスト名を識別し、対象サイトでのみローカルに時間を計測し、通知と休憩オーバーレイを表示します。ページ内容をサーバーへ送信することはありません。</li>
+      </ul>
+
+      <h2>データ共有</h2>
+      <p>ユーザーデータを第三者へ販売、貸与、転送、共有することはありません。ユーザーデータをパーソナライズ広告に使用することも、人が読み取ることもありません。</p>
+
+      <h2>ユーザーによる管理</h2>
+      <p>ポップアップから対象サイトの変更、現在のサイトのタイマー削除、ガードの一時停止、拡張機能の無効化ができます。拡張機能をアンインストールすると、Chrome がこの拡張機能のために保存しているローカルデータは削除されます。</p>
+
+      <h2>連絡先</h2>
+      <p>プライバシーまたはサポートに関するお問い合わせは、<a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a> までご連絡ください。</p>
+
+      <h2>Chrome Web Store Limited Use</h2>
+      <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+    </article>
+  </main>
+
+  <script>
+    const labels = {
+      'zh-CN': {
+        htmlLang: 'zh-CN',
+        title: '狗狗守门员隐私政策',
+        updated: '最后更新：2026-06-01',
+        language: '语言',
+      },
+      'zh-TW': {
+        htmlLang: 'zh-TW',
+        title: '狗狗守門員隱私政策',
+        updated: '最後更新：2026-06-01',
+        language: '語言',
+      },
+      en: {
+        htmlLang: 'en',
+        title: 'Dog Gatekeeper Privacy Policy',
+        updated: 'Last updated: 2026-06-01',
+        language: 'Language',
+      },
+      ja: {
+        htmlLang: 'ja',
+        title: 'Dog Gatekeeper プライバシーポリシー',
+        updated: '最終更新日：2026-06-01',
+        language: '言語',
+      },
+    };
+
+    const supportedLanguages = Object.keys(labels);
+
+    function getInitialLanguage() {
+      const params = new URLSearchParams(location.search);
+      const queryLanguage = params.get('lang');
+      const savedLanguage = localStorage.getItem('dogGatekeeperPrivacyLanguage');
+      const browserLanguage = navigator.language || 'zh-CN';
+
+      return [queryLanguage, savedLanguage, browserLanguage, 'zh-CN']
+        .map((language) => {
+          if (!language) {
+            return '';
+          }
+
+          if (supportedLanguages.includes(language)) {
+            return language;
+          }
+
+          if (language.toLowerCase().startsWith('zh-tw') || language.toLowerCase().startsWith('zh-hk')) {
+            return 'zh-TW';
+          }
+
+          if (language.toLowerCase().startsWith('zh')) {
+            return 'zh-CN';
+          }
+
+          if (language.toLowerCase().startsWith('ja')) {
+            return 'ja';
+          }
+
+          if (language.toLowerCase().startsWith('en')) {
+            return 'en';
+          }
+
+          return '';
+        })
+        .find(Boolean);
+    }
+
+    function setLanguage(language) {
+      const safeLanguage = supportedLanguages.includes(language) ? language : 'zh-CN';
+      const copy = labels[safeLanguage];
+
+      document.documentElement.lang = copy.htmlLang;
+      document.title = `${copy.title} / Dog Gatekeeper`;
+      document.querySelector('[data-title]').textContent = copy.title;
+      document.querySelector('[data-last-updated]').textContent = copy.updated;
+      document.querySelector('[data-language-label]').textContent = copy.language;
+
+      document.querySelectorAll('[data-lang-panel]').forEach((panel) => {
+        panel.hidden = panel.dataset.langPanel !== safeLanguage;
+      });
+
+      document.querySelectorAll('[data-lang-button]').forEach((button) => {
+        button.setAttribute(
+          'aria-pressed',
+          String(button.dataset.langButton === safeLanguage)
+        );
+      });
+
+      localStorage.setItem('dogGatekeeperPrivacyLanguage', safeLanguage);
+    }
+
+    document.querySelectorAll('[data-lang-button]').forEach((button) => {
+      button.addEventListener('click', () => setLanguage(button.dataset.langButton));
+    });
+
+    setLanguage(getInitialLanguage());
+  </script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dog Gatekeeper / 狗狗守门员</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fff8ec;
+      --text: #26170f;
+      --muted: #6f5a49;
+      --line: #ead7bd;
+      --panel: #fff2dc;
+      --accent: #b66018;
+      --accent-text: #fff8ec;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 920px;
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    header,
+    main {
+      display: grid;
+      gap: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 7vw, 64px);
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .lead {
+      max-width: 64ch;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .language-card,
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+    }
+
+    .language-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      padding: 12px;
+    }
+
+    .language-label {
+      margin-right: 4px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .language-button {
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .language-button[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: var(--accent-text);
+    }
+
+    .panel {
+      padding: 20px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .button-link {
+      display: inline-flex;
+      min-height: 40px;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--accent-text);
+      text-decoration: none;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #18110d;
+        --text: #fff8ec;
+        --muted: #d7c0a3;
+        --line: #4d382a;
+        --panel: #221712;
+        --accent: #ffbf5a;
+        --accent-text: #271407;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 data-title>狗狗守门员</h1>
+      <p class="lead" data-lead>一只本地运行的狗狗守门员，帮你在自选的分心网站上及时停下来休息。</p>
+    </div>
+    <nav class="language-card" aria-label="Language selector">
+      <span class="language-label" data-language-label>语言</span>
+      <button class="language-button" type="button" data-lang-button="zh-CN" aria-pressed="true">简体中文</button>
+      <button class="language-button" type="button" data-lang-button="zh-TW" aria-pressed="false">繁體中文</button>
+      <button class="language-button" type="button" data-lang-button="en" aria-pressed="false">English</button>
+      <button class="language-button" type="button" data-lang-button="ja" aria-pressed="false">日本語</button>
+    </nav>
+  </header>
+
+  <main>
+    <article class="panel" data-lang-panel="zh-CN">
+      <h2>功能</h2>
+      <ul>
+        <li>按自选目标站点本地计时。</li>
+        <li>到达设定时长后显示狗狗休息提醒、倒计时和轻量休息任务。</li>
+        <li>设置、计时和统计只保存在本机，不上传浏览数据。</li>
+      </ul>
+      <h2>支持</h2>
+      <p>如有隐私或支持问题，请联系 <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a>。</p>
+      <div class="links">
+        <a class="button-link" href="privacy.html">隐私政策</a>
+      </div>
+    </article>
+
+    <article class="panel" data-lang-panel="zh-TW" hidden>
+      <h2>功能</h2>
+      <ul>
+        <li>按自選目標網站本地計時。</li>
+        <li>到達設定時長後顯示狗狗休息提醒、倒數計時和輕量休息任務。</li>
+        <li>設定、計時和統計只保存在本機，不上傳瀏覽資料。</li>
+      </ul>
+      <h2>支援</h2>
+      <p>如有隱私或支援問題，請聯絡 <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a>。</p>
+      <div class="links">
+        <a class="button-link" href="privacy.html?lang=zh-TW">隱私政策</a>
+      </div>
+    </article>
+
+    <article class="panel" data-lang-panel="en" hidden>
+      <h2>Features</h2>
+      <ul>
+        <li>Tracks time locally on the target sites you choose.</li>
+        <li>Shows a dog break reminder, countdown, and lightweight break task when the limit is reached.</li>
+        <li>Settings, timers, and statistics stay on your device. Browsing data is not uploaded.</li>
+      </ul>
+      <h2>Support</h2>
+      <p>For privacy or support questions, contact <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a>.</p>
+      <div class="links">
+        <a class="button-link" href="privacy.html?lang=en">Privacy Policy</a>
+      </div>
+    </article>
+
+    <article class="panel" data-lang-panel="ja" hidden>
+      <h2>機能</h2>
+      <ul>
+        <li>選択した対象サイトでローカルに時間を計測します。</li>
+        <li>設定した時間に達すると、犬の休憩リマインダー、カウントダウン、軽い休憩タスクを表示します。</li>
+        <li>設定、タイマー、統計は端末内に保存され、閲覧データはアップロードされません。</li>
+      </ul>
+      <h2>サポート</h2>
+      <p>プライバシーまたはサポートに関するお問い合わせは、<a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a> までご連絡ください。</p>
+      <div class="links">
+        <a class="button-link" href="privacy.html?lang=ja">プライバシーポリシー</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const labels = {
+      'zh-CN': {
+        htmlLang: 'zh-CN',
+        title: '狗狗守门员',
+        lead: '一只本地运行的狗狗守门员，帮你在自选的分心网站上及时停下来休息。',
+        language: '语言',
+      },
+      'zh-TW': {
+        htmlLang: 'zh-TW',
+        title: '狗狗守門員',
+        lead: '一隻本地運行的狗狗守門員，幫你在自選的分心網站上及時停下來休息。',
+        language: '語言',
+      },
+      en: {
+        htmlLang: 'en',
+        title: 'Dog Gatekeeper',
+        lead: 'A local-only guard dog that helps you take breaks from the distracting sites you choose.',
+        language: 'Language',
+      },
+      ja: {
+        htmlLang: 'ja',
+        title: 'Dog Gatekeeper',
+        lead: '選択した気が散るサイトから休憩するよう促す、ローカル専用の番犬です。',
+        language: '言語',
+      },
+    };
+
+    const supportedLanguages = Object.keys(labels);
+
+    function getInitialLanguage() {
+      const params = new URLSearchParams(location.search);
+      const queryLanguage = params.get('lang');
+      const savedLanguage = localStorage.getItem('dogGatekeeperSiteLanguage');
+      const browserLanguage = navigator.language || 'zh-CN';
+
+      return [queryLanguage, savedLanguage, browserLanguage, 'zh-CN']
+        .map((language) => {
+          if (!language) {
+            return '';
+          }
+
+          if (supportedLanguages.includes(language)) {
+            return language;
+          }
+
+          const lowerLanguage = language.toLowerCase();
+
+          if (lowerLanguage.startsWith('zh-tw') || lowerLanguage.startsWith('zh-hk')) {
+            return 'zh-TW';
+          }
+
+          if (lowerLanguage.startsWith('zh')) {
+            return 'zh-CN';
+          }
+
+          if (lowerLanguage.startsWith('ja')) {
+            return 'ja';
+          }
+
+          if (lowerLanguage.startsWith('en')) {
+            return 'en';
+          }
+
+          return '';
+        })
+        .find(Boolean);
+    }
+
+    function setLanguage(language) {
+      const safeLanguage = supportedLanguages.includes(language) ? language : 'zh-CN';
+      const copy = labels[safeLanguage];
+
+      document.documentElement.lang = copy.htmlLang;
+      document.title = `${copy.title} / Dog Gatekeeper`;
+      document.querySelector('[data-title]').textContent = copy.title;
+      document.querySelector('[data-lead]').textContent = copy.lead;
+      document.querySelector('[data-language-label]').textContent = copy.language;
+
+      document.querySelectorAll('[data-lang-panel]').forEach((panel) => {
+        panel.hidden = panel.dataset.langPanel !== safeLanguage;
+      });
+
+      document.querySelectorAll('[data-lang-button]').forEach((button) => {
+        button.setAttribute(
+          'aria-pressed',
+          String(button.dataset.langButton === safeLanguage)
+        );
+      });
+
+      localStorage.setItem('dogGatekeeperSiteLanguage', safeLanguage);
+    }
+
+    document.querySelectorAll('[data-lang-button]').forEach((button) => {
+      button.addEventListener('click', () => setLanguage(button.dataset.langButton));
+    });
+
+    setLanguage(getInitialLanguage());
+  </script>
+</body>
+</html>
